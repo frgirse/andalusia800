@@ -3,3 +3,35 @@
 @tailwind utilities;
 
 
+* {
+    /* So 100% means 100% */
+    box-sizing: border-box;
+  }
+  html, body {
+    /* Make the body to be as tall as browser window */
+    height: 100%;
+    background: #ccc;
+    padding: 20px;
+  }
+  body {
+    padding: 20px;
+    background: #110e0a;  
+  }
+  .area-one {
+    /* With the body as tall as the browser window
+       this will be too */
+    height: 100%;
+  }
+  .area-one h2 {
+    height: 50px;
+    line-height: 50px;
+  }
+  #content {
+    /* Subtract the header size */
+    height: calc(100% - 10vh);
+    overflow: auto;
+  }
+
+  .orange_gradient {
+    @apply bg-gradient-to-r from-amber-500 via-orange-600 to-yellow-500 text-[8rem] font-bold bg-clip-text text-transparent;
+  }

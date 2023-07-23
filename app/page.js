@@ -1,17 +1,25 @@
-import { getServerSession } from 'next-auth'
-import { authOptions } from './api/auth/[...nextauth]/route'
-import User from './components/user'
+import { archidaught, lontoutline } from "@/Utils/fonts";
+import React from "react";
 
 export default async function Home() {
-  const session = await getServerSession(authOptions)
 
   return (
-    <section>
-      <h1>Home</h1>
-      <h1>Server Side Rendered</h1>
-      <pre>{JSON.stringify(session)}</pre>
-      <h1>Client Side Rendered</h1>
-      <User />
-    </section>
-  )
+    <div className="w-full overflow-x-hidden flex-col h-2/3" >
+        <main className="area-one text-[8rem]">
+      <section  className="h-full w-full bg-[url('assets/images/images.webp')] bg-cover md:bg-[url('/assets/images/image.webp') ] lg:bg-cover bg-no-repeat">
+      <div className={lontoutline.className}>
+          <h1 className="head_xttext bg-white/60 lg:bg-transparent text-center lg:text-[8rem]lg:text-left lg:ml-56">
+              Wohntraum
+           <br
+                  className='max-md:hidden' />
+                    <span className='orange_gradient text-center'> Andalusia</span>
+          </h1>
+      </div>
+
+      </section>
+    </main>
+
+    </div>
+    
+  );
 }
