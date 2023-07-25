@@ -28,7 +28,7 @@
   }
   #content {
     /* Subtract the header size */
-    height: calc( 100% - 8vh );
+    height: calc(100% - 10vh);
     overflow: auto;
   }
 

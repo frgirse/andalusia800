@@ -2,7 +2,7 @@ import React from 'react'
 import Link from 'next/link'
 import Dashboard from '@/app/(site)/dashboard/page'
 import { Navigation} from '@/app/components'
-import LogoWA from '../../public/assets/images/LogoWA.svg'
+import LogoWA from'../../public/assets/images/LogoWA.svg'
 import Image from 'next/image' 
 
 
